@@ -39,13 +39,22 @@ const dashboard = {
 
     },
     {
+      id:'tournements',
+      title:'Tournements',
+      type:'item',
+      url:'/tournements',
+      icon:icons.ProfileOutlined,
+      breadcrumbs:false
+    },
+    {
       id:'members',
       title:'Members',
       type:'item',
       url:'/members',
       icon:icons.ProfileOutlined,
       breadcrumbs:false
-    }
+    },
+    
   ]
 };
 
