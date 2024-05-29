@@ -22,7 +22,7 @@ function createData(tracking_no, name, fat, carbs, protein) {
 }
 
 const rows = [
-  createData(84564564, 'Dan Patra', 89, 2),
+  createData(84564564, 'Dan Patra', 85, 2),
   createData(98764564, 'Guy Patizer', 87, 0),
   createData(98756325, 'Kobi Maimon', 86, 1),
   createData(98652366, 'Vadym', 72, 1),
