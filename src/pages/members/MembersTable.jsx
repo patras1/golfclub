@@ -22,9 +22,11 @@ function createData(tracking_no, name, fat, carbs, protein) {
 }
 
 const rows = [
-  createData(84564564, 'Stableford - Couples', '21/6/2024', 16),
-  createData(98764564, 'Scrumbles - Couples', '27/6/2024',21),
-  createData(98764564, 'Scrumbles - Singles', '12/7/2024',21),
+  createData(84564564, 'Dan Patra', 85, 2),
+  createData(98764564, 'Guy Patizer', 87, 0),
+  createData(98756325, 'Kobi Maimon', 86, 1),
+  createData(98652366, 'Vadym', 72, 1),
+  createData(98652366, 'Ishay Dayan', 75, 1),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -70,13 +72,13 @@ const headCells = [
     id: 'fat',
     align: 'left',
     disablePadding: false,
-    label: 'Date'
+    label: 'Score'
   },
   {
     id: 'carbs',
     align: 'left',
     disablePadding: false,
-    label: 'Players'
+    label: 'Status'
   },
  
 ];
@@ -134,7 +136,7 @@ function OrderStatus({ status }) {
 
 // ==============================|| ORDER TABLE ||============================== //
 
-export default function TournementsTable() {
+export default function MembersTable() {
   const order = 'asc';
   const orderBy = 'tracking_no';
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Box } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Box,Grid } from '@mui/material';
+import MainCard from 'components/MainCard';
+import MemberTable from './MembersTable';
 
 // Sample data
 const rows = [
@@ -10,37 +12,19 @@ const rows = [
   // Add more items as needed
 ];
 
-// Table header
-function ItemTableHead() {
-  return (
-    <TableHead>
-      <TableRow>
-        <TableCell>ID</TableCell>
-        <TableCell>Name</TableCell>
-        <TableCell>Status</TableCell>
-      </TableRow>
-    </TableHead>
-  );
-}
-
 // Main component
-export default function Members() {
+export default function Standing() {
   return (
-    <Box>
-      <TableContainer>
-        <Table>
-          <ItemTableHead />
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.id}>
-                <TableCell>{row.id}</TableCell>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>{row.status}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </Box>
+    <Grid item xs={12} md={7} lg={8}>
+        <Grid container alignItems="center" justifyContent="space-between">
+          <Grid item>
+            <Typography variant="h5">Standings</Typography>
+          </Grid>
+          <Grid item />
+        </Grid>
+        <MainCard sx={{ mt: 2 }} content={false}>
+          <MemberTable />
+        </MainCard>
+      </Grid>  
   );
 }

@@ -21,14 +21,7 @@ const dashboard = {
   title: 'Navigation',
   type: 'group',
   children: [
-    {
-      id: 'dashboard',
-      title: 'Dashboard',
-      type: 'item',
-      url: '/dashboard/default',
-      icon: icons.DashboardOutlined,
-      breadcrumbs: false
-    },
+    
     {
       id:'standings',
       title:'Standings',
@@ -53,6 +46,14 @@ const dashboard = {
       url:'/members',
       icon:icons.ProfileOutlined,
       breadcrumbs:false
+    },
+    {
+      id: 'dashboard',
+      title: 'Dashboard',
+      type: 'item',
+      url: '/dashboard/default',
+      icon: icons.DashboardOutlined,
+      breadcrumbs: false
     },
     
   ]
